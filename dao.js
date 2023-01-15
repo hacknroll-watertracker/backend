@@ -4,7 +4,7 @@ export default class DAO {
     static async postRecord(amt, date) {
         try {
             const newRec = new Record({
-                amt,
+                amount: amt,
                 date
             })
             
