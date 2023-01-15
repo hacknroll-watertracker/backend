@@ -24,7 +24,7 @@ export default class Controller {
 
     static async apiGetRecord(req, res, next) {
         try {
-            const date = req.body.date
+            const date = req.query.date
 
             const response = await DAO.getRecord(date)
 
